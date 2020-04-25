@@ -10,6 +10,8 @@ exports.server = (serv) => {
       `§b[Discord] §7${message.author.tag}§f: §7${message.content}`
     );
   });
+  Discord.setDefaultVC(settings.vc_default);
+  Discord.setVoiceChannels(settings.vc_chnnels);
 };
 exports.player = (player, serv) => {
   player.on("chat", (message) => {
