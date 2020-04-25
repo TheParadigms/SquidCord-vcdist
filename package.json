@@ -1,5 +1,5 @@
 {
-  "name": "squidcord",
+  "name": "squidcord-vcdist",
   "version": "1.0.3",
   "description": "A flying-squid plugin to integrate your server with discord",
   "main": "index.js",
@@ -10,7 +10,8 @@
   "author": "dada513",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^12.1.1"
+    "discord.js": "^12.1.1",
+    "quick.db": "7.1.1"
   },
   "homepage": "https://github.com/dada513/SquidCord",
   "bugs": {
