@@ -4,11 +4,19 @@ const minotar = (user) => `https://minotar.net/avatar/${user}`;
 
 let channel;
 let guild;
+let vcDefault;
+let vcList;
 exports.setGuild = (newGuild) => {
   guild = newGuild;
 };
 exports.setChannel = (newChannel) => {
   channel = newChannel;
+};
+exports.setDefaultVC = (newDefaultVC) => {
+  vcDefault = newDefaultVC;
+};
+exports.setVoiceChannels = (newVCList) => {
+  vcList = newVCList;
 };
 exports.login = (token) => client.login(token);
 exports.client = client;
@@ -49,4 +57,7 @@ exports.playerLeft = (player) => {
     )
     .setColor("RED");
   c.send(embed);
+};
+exports.playerNearby = (players) => {
+  //wait
 };
